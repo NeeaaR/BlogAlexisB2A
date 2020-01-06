@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"     xmlns="http://xmlns.jcp.org/xml/ns/javaee"     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"     id="WebApp_ID" version="4.0">
+  <display-name>BlogAlexis</display-name>
+  
+  <servlet>
+  	<servlet-name>Index</servlet-name>
+  	<servlet-class>ynov.alexis.servlets.Index</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Index</servlet-name>
+  <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Article</servlet-name>
+  	<servlet-class>ynov.alexis.servlets.Article</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Article</servlet-name>
+  <url-pattern>/article</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>AddArticle</servlet-name>
+  	<servlet-class>ynov.alexis.servlets.AddArticle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddArticle</servlet-name>
+  <url-pattern>/addarticle</url-pattern>
+  </servlet-mapping>  
+  
+    
+  <servlet>
+  	<servlet-name>Authors</servlet-name>
+  	<servlet-class>ynov.alexis.servlets.Authors</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Authors</servlet-name>
+  <url-pattern>/auteurs</url-pattern>
+  </servlet-mapping>
+	  
+  <servlet>
+  	<servlet-name>Author</servlet-name>
+  	<servlet-class>ynov.alexis.servlets.Author</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Author</servlet-name>
+  <url-pattern>/auteurs/auteur</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>UpdateArticle</servlet-name>
+  	<servlet-class>ynov.alexis.servlets.UpdateArticle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UpdateArticle</servlet-name>
+  <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>DeleteArticle</servlet-name>
+  	<servlet-class>ynov.alexis.servlets.DeleteArticle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DeleteArticle</servlet-name>
+  <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+	  
+  <servlet>
+  	<servlet-name>SignUp</servlet-name>
+  	<servlet-class>ynov.alexis.servlets.SignUp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SignUp</servlet-name>
+  <url-pattern>/inscription</url-pattern>
+  </servlet-mapping>
+	  
+  <servlet>
+  	<servlet-name>Connection</servlet-name>
+  	<servlet-class>ynov.alexis.servlets.Connection</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Connection</servlet-name>
+  <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>Disconnect</servlet-name>
+  	<servlet-class>ynov.alexis.servlets.Disconnect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Disconnect</servlet-name>
+  <url-pattern>/deconnexion</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+  	<servlet-name>DeleteComment</servlet-name>
+  	<servlet-class>ynov.alexis.servlets.DeleteComment</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DeleteComment</servlet-name>
+  <url-pattern>/deletecomment</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+  	<servlet-name>AllArticles</servlet-name>
+  	<servlet-class>ynov.alexis.servlets.AllArticles</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AllArticles</servlet-name>
+  <url-pattern>/allarticles</url-pattern>
+  </servlet-mapping>  
+</web-app>
